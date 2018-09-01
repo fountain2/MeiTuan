@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+/**外边框，限制页面大小
+*/
+.container {
+    width: 1349px;
+    float: left;
+    background-color: rgb(245, 245, 245);
+    /*border:1px solid black;*/
+}
+/**
+内容区
+*/
+.content{
+    width:60%;
+    margin: 0 auto;
+
+}
+/**
+提示区域
+*/
+.mention{
+    position: relative;
+    margin-top: 140px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+.mention .icon-meituanwaimai{
+    color: #06C1AE;
+    font-size: 300px;
+    display: inline-block;
+}
+.mention h2{
+    color: #06C1AE;
+    display: inline-block;
+    position: absolute;
+    padding-left: 80px;
+    margin-top: 70px;
+}
+.mention .mention_buttons_box{
+    height:99px;
+    display: inline-block;
+    margin-left: 80px;
+}
+.mention .mention_buttons{
+    float: left;
+    /*width: 40%;*/
+    height:60%;
+    background: #06C1AE;
+    border:none;
+    color:white;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}

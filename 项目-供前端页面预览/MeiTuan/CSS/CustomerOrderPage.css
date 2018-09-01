@@ -1,0 +1,613 @@
+/*
+——整体设置Start——
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F5F5F5;
+}
+ul {
+    list-style: none;
+}
+.all {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1000px) {
+    .all {
+        width: 1000px;
+    }
+}
+/*左浮动*/
+.left{
+    float: left;
+}
+/*消除浮动*/
+.clear {
+    clear: both;
+}
+/*——整体设置End——*/
+
+
+/*
+——顶部导航栏Start——
+*/
+.top_content_width{
+    width: 1000px;
+    margin: 0 auto;
+}
+/*顶部黑条*/
+.top_part1_bg{
+    width: 100%;
+    height: 32px;
+    background-color: #333333;
+}
+.address{
+    width: auto;
+    height: 12px;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding-right: 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #645B4E;
+}
+.changeAddr{
+    width: auto;
+    height: 12px;
+    float: left;
+    margin: 10px 0 0 0;
+    line-height: 10px;
+    color: #FFD161;
+    font-size: 12px;
+    text-decoration: none;
+}
+.loginButton{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+}
+.loginButton:hover{
+    color: white;
+}
+.registerButton{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #D2D0BC;
+}
+.registerButton:hover{
+    color: white;
+}
+.changeCustomer{
+    width: auto;
+    height: 12px;
+    float: right;
+    margin: 10px 0 0 0;
+    line-height: 10px;
+    color: #FFD161;
+    font-size: 12px;
+    text-decoration: none;
+}
+.customerName{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 10px 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #645B4E;
+}
+/*导航栏*/
+.top_part2_bg{
+    width: 100%;
+    height: 82px;
+    background-color: white;
+}
+.logoImg{
+    width: 163px;
+    height: 48px;
+    margin: 17px 0;
+    float: left;
+    background-image: url("../img/logo.png");
+    background-size: 100% 100%;
+}
+.search_bg{
+    width: 300px;
+    height: 40px;
+    margin-top: 21px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    float: right;
+    border: 1px solid #E5E5E5;
+}
+.searchBar{
+    width: 250px;
+    height: 38px;
+    float: left;
+    border: none;
+    text-indent: 1em;
+    outline: none;
+}
+.searchButton{
+    width: 48px;
+    height: 38px;
+    box-sizing: border-box;
+    border-left: 1px solid #E5E5E5;
+    float: right;
+    text-align: center;
+    line-height: 38px;
+}
+.item{
+    height: 40px;
+    float: right;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.item li{
+    height: 40px;
+    padding: 0 20px;
+    float: left;
+    line-height: 40px;
+    font-size: 16px;
+}
+.item li a{
+    color: black;
+    text-decoration: none;
+}
+.item li a:hover{
+    color: #FFA735;
+}
+/*——顶部导航栏End——*/
+
+
+
+
+/*悬浮置顶按钮*/
+.toTop{
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 48px;
+    font-size: 30px;
+    transition: 0.2s;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+.toTop:hover{
+    color: #333333;
+    background-color: #FFD161;
+}
+/*
+——内容区——
+*/
+.content_bg{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+/*订单路径*/
+.orderPath{
+    margin: 10px 0;
+}
+.shopName{
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+    border-left: 6px solid #333333;
+    padding: 2px 10px 0 10px;
+}
+.orderPath span{
+    font-size: 14px;
+    font-weight: bolder;
+}
+/*内容区-左侧*/
+.content_left_bg{
+    width: 400px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+.goodsTitle{/*表头*/
+    width: 100%;
+    height: 44px;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+.goodsTitle_left{
+    float: left;
+}
+.goodsTitle_right{
+    float: right;
+}
+.goodsList{/*表左*/
+    float: left;
+}
+.goodsList li{
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    border-bottom: 1px solid #dddddd;
+}
+.priceList{/*表右*/
+    float: left;
+}
+.priceList li{
+    width: 82px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+}
+.priceOfAll{/*表底*/
+    width: 100%;
+    height: 40px;
+    float: left;
+    line-height: 54px;
+    font-weight: bold;
+}
+.priceOfAll_left{
+    float: left;
+}
+.priceOfAll_right{
+    float: right;
+}
+/*内容区-右侧*/
+.content_right_bg{
+    width: 580px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    float: right;
+    background-color: white;
+}
+.addressTitle{
+    margin: 20px;
+}
+.addAddress{
+    height: 20px;
+    float: right;
+    color: #bbbbbb;
+    text-decoration: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+.addAddress span{
+    width: 14px;
+    height: 14px;
+    float: left;
+    line-height: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+/*地址列表*/
+.customerInfList_bg{
+    width: 540px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #CCCCCC;
+}
+.customerInfList_bg li{
+    width: 540px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    background-color: #FAFAFA;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+.firstRow{
+    width: 500px;
+    height: 35px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 14px;
+    line-height: 35px;
+}
+.updateButton{
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.updateButton:hover{
+    color: #FFD161;
+}
+.deleteButton{
+    float: right;
+    cursor: pointer;
+}
+.deleteButton:hover{
+    color: #FFD161;
+}
+.secondRow{
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.checked{
+    float: right;
+    color:#FFD705;
+    font-weight: bold;
+    display: none;
+}
+.showMoreButton{
+    width: 120px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    border-top-color: white;
+    color: #bbbbbb;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+/*商家留言&支付方式*/
+.toShopText_bg{
+    width: 520px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.toShopText_bg input{
+    width: 400px;
+    height: 30px;
+    text-indent: 0.5em;
+    color: #666666;
+}
+.payWay_bg{
+    width: 520px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.way1{
+    padding: 0 10px;
+    border: 1px solid #bbbbbb;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.way2{
+    padding: 0 10px;
+    border: 1px solid #bbbbbb;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+/*支付框*/
+.readyToOrder{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #CCCCCC;
+}
+.sumPrice{
+    font-weight: bold;
+    float: left;
+    margin: 11px 30px;
+    font-size: 14px;
+}
+.sumPrice span{
+    color: #FFA735;
+    font-size: 26px;
+}
+.readyButton{
+    width: 100px;
+    height: 40px;
+    float: right;
+    border-radius: 3px;
+    background-color: #FFD705;
+    font-size: 16px;
+    outline: none;
+    margin: 10px 20px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*弹出框——————————*/
+.box_bg1{/*填写收货信息的弹窗*/
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+/*新增收货地址的弹出框*/
+.newAddress_box{
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    margin: 150px auto;
+    color: #555555;
+    font-weight: bold;
+}
+.newAddress_box_title{/*灰色头部栏*/
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 40px;
+    background-color: #F8F8F8;
+}
+.newAddress_box_title span{
+    color: #888888;
+    font-size: 18px;
+    font-weight: normal;
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.newAddress_left{/*左侧文字*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.newAddress_left li{
+    width: 90px;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 34px;
+    font-size: 14px;
+}
+.newAddress_left  li span{
+    color: #EB6100;
+    padding-right: 6px;
+}
+.newAddress_right{/*右侧输入框*/
+    width: 360px;
+    float: left;
+    margin-top: 20px;
+}
+.newAddress_right li{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.newAddress_right li [type="text"]{
+    height: 26px;
+    width: 300px;
+    text-indent: 0.5em;
+}
+.newAddress_right  li span{
+    color: #EB6100;
+    padding-right: 6px;
+}
+.saveButton{/*保存按钮*/
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: #FFD161;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 20px 0 160px;
+    cursor: pointer;
+}
+.cancelButton{/*取消按钮*/
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: #A0A0A0;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    margin: 20px 0;
+    cursor: pointer;
+}
+/*——————————————*/
+.box_bg2{/*确定删除收货信息的弹窗*/
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+/*删除收货地址的弹出框*/
+.deleteAddress_box{
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    margin: 200px auto;
+    color: #555555;
+    font-weight: bold;
+}
+.deleteAddress_box_title{/*灰色头部栏*/
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 40px;
+    background-color: #F8F8F8;
+}
+.deleteAddress_box_title span{
+    color: #888888;
+    font-size: 18px;
+    font-weight: normal;
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.deleteText{/*提示文本*/
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.yesButton{/*确定按钮*/
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: #FFD161;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 20px 0 66px;
+    cursor: pointer;
+}
+.noButton{/*取消按钮*/
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: #A0A0A0;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    margin: 20px 0;
+    cursor: pointer;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link href="../CSS/CustomerPersonalPage.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../JS/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../JS/CustomerPersonalPage/CustomerPersonalPage.js"></script>
+</head>
+<body>
+<div class="all">
+    <!--顶部导航栏部分Start-->
+    <div class="top_part1_bg">
+        <div class="top_content_width">
+            <div class="address">什么区某某街</div>
+            <a href="" class="changeAddr">切换地址</a>
+            <!--未登录时显示登录|注册-->
+            <a href="" class="loginButton">登录</a>
+            <a href="" class="registerButton">注册</a>
+            <!--已登录时显示账号名|切换账号-->
+            <a href="" class="changeCustomer">切换账号</a>
+
+            <div class="customerName">账号名suibian</div>
+        </div>
+    </div>
+    <div class="top_part2_bg">
+        <div class="top_content_width">
+            <div class="logoImg"></div>
+            <div class="search_bg">
+                <input title="" placeholder="搜索店铺,美食" type="text" class="searchBar"/>
+                <a href="" class="searchButton">图标</a>
+            </div>
+            <ul class="item">
+                <li>
+                    <a href="">首页</a>
+                </li>
+                <li>
+                    <a href="">个人中心</a>
+                </li>
+                <li>
+                    <a href="">成为商家</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部导航栏部分End-->
+
+    <!--悬浮置顶栏-->
+    <div class="toTop">^</div>
+    <!--内容区-->
+    <div class="content_bg">
+        <div class="content_left">
+            <ul class="option">
+                <li>
+                    <div class="content_left_item1">最近订单</div>
+                </li>
+                <li>
+                    <div class="content_left_item2">我的账号</div>
+                </li>
+                <li>
+                    <div class="content_left_item3">我的收藏</div>
+                </li>
+            </ul>
+        </div>
+        <!--内容部分1-Start-->
+        <div class="content1_right">
+            <div class="title">
+                <div class="title_1 left">订单内容</div>
+                <div class="title_2 left">商家电话</div>
+                <div class="title_3 left">支付金额</div>
+            </div>
+            <!--订单区域-->
+            <div class="aOrderTop">
+                <a href="">
+                    <img class="shopImg" src=""/>
+                </a>
+
+                <div class="shopInf1">
+                    <a href="" class="shopName">某某饭店</a>
+
+                    <div class="orderTime">2018-11-11&nbsp;11:11</div>
+                    <div class="orderID">
+                        订单号：<span>123123123</span>
+                    </div>
+                </div>
+                <div class="shopInf2">
+                    12345678910
+                </div>
+                <div class="shopInf3">
+                    ￥<span>143</span>
+                </div>
+            </div>
+            <!--单个订单的详细内容-->
+            <div class="aOrderContent">
+                <div class="aOrderBox_left">
+                    <div class="goodsListTitle">订单详情</div>
+                    <div class="goodsListBox">
+                        <ul class="goodsName">
+                            <li>肯得起鸡排</li>
+                            <li>麦当纳汉堡</li>
+                            <li>名字很长很长的一个商品</li>
+                        </ul>
+                        <ul class="goodsNum">
+                            <li>2</li>
+                            <li>1</li>
+                            <li>3</li>
+                        </ul>
+                        <ul class="goodsPrice">
+                            <li>￥11</li>
+                            <li>￥123</li>
+                            <li>￥9</li>
+                        </ul>
+                    </div>
+                    <div class="numOfPay">
+                        实际支付:￥<span>143</span>
+                    </div>
+                    <div class="customerInf">
+                        <ul class="customerInf_left">
+                            <li>地址：</li>
+                            <li>姓名：</li>
+                            <li>电话：</li>
+                            <li>备注：</li>
+                        </ul>
+                        <ul class="customerInf_right">
+                            <li>xx市yy区zz路hh号</li>
+                            <li>范·达克尼斯</li>
+                            <li>12345678910</li>
+                            <li>无</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aOrderBox_right">
+                    <div class="orderState">
+                        <div class="orderStateTitle">订单状态</div>
+                        <ul class="orderStateList">
+                            <li><span></span>订单提交，等待接单</li>
+                            <li><span></span>商家接单，准备商品</li>
+                            <li><span></span>商品完成，等待配送</li>
+                            <li><span></span>商品送达，订单完成</li>
+                        </ul>
+                        <p class="lastUpdateTime">
+                            最后更新时间：<span>2018-11-11&nbsp;11:11</span>
+                        </p>
+                    </div>
+                    <div class="buttonColumn">
+                        <div>确认收货</div>
+                        <div>取消订单</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--其他订单区域-->
+            <div class="aOrderTop">
+                <a href="">
+                    <img class="shopImg" src=""/>
+                </a>
+
+                <div class="shopInf1">
+                    <a href="" class="shopName">某某饭店</a>
+
+                    <div class="orderTime">2018-11-11&nbsp;11:11</div>
+                    <div class="orderID">
+                        订单号：<span>123123123</span>
+                    </div>
+                </div>
+                <div class="shopInf2">
+                    12345678910
+                </div>
+                <div class="shopInf3">
+                    ￥<span>143</span>
+                </div>
+            </div>
+            <div class="aOrderTop">
+                <a href="">
+                    <img class="shopImg" src=""/>
+                </a>
+
+                <div class="shopInf1">
+                    <a href="" class="shopName">某某饭店</a>
+
+                    <div class="orderTime">2018-11-11&nbsp;11:11</div>
+                    <div class="orderID">
+                        订单号：<span>123123123</span>
+                    </div>
+                </div>
+                <div class="shopInf2">
+                    12345678910
+                </div>
+                <div class="shopInf3">
+                    ￥<span>143</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--内容部分1-End-->
+        <!--内容部分2-Start-->
+        <div class="content2_right">
+            <p class="content2_title">我的账号信息</p>
+            <ul class="userInf1">
+                <li>账号名：</li>
+                <li>手机号：</li>
+                <li>旧密码：</li>
+                <li>新密码：</li>
+                <li>确认新密码：</li>
+            </ul>
+            <form action="" method="post">
+                <ul class="userInf2">
+                    <li>
+                        <span>范.达克尼斯</span>
+                    </li>
+                    <li>
+                        <input title="" type="text" name="" value="123xxxx8910"/>
+                        <span>提示信息</span>
+                    </li>
+                    <li>
+                        <input title="" type="password" name=""/>
+                        <span>提示信息</span>
+                    </li>
+                    <li>
+                        <input title="" type="password" name=""/>
+                        <span>提示信息</span>
+                    </li>
+                    <li>
+                        <input title="" type="password" name=""/>
+                        <span>提示信息</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="changeButtonLocation">
+                    <input title="" class="changeButton" type="submit" value="确认修改"/>
+                    <input title="" class="changeButton" type="reset" value="取消修改"/>
+                </div>
+            </form>
+        </div>
+        <!--内容部分2-End-->
+        <!--内容部分3-Start-->
+        <div class="content3_right">
+            <div class="aCollection">
+                <a href="">
+                    <img class="collectShopImg" src=""/>
+                </a>
+                <div class="collectShopImg_right">
+                    <a href="" class="collectShopName">这是个店铺名1</a>
+                    <ul class="priceInf">
+                        <li>
+                            起送价:￥<span>10</span>
+                        </li>
+                        <li>
+                            配送价:￥<span>3</span>
+                        </li>
+                    </ul>
+                    <div class="cancelButton">
+                        取消收藏
+                    </div>
+                </div>
+            </div>
+            <div class="aCollection">
+                <a href="">
+                    <img class="collectShopImg" src=""/>
+                </a>
+                <div class="collectShopImg_right">
+                    <a href="" class="collectShopName">这是个店铺名2</a>
+                    <ul class="priceInf">
+                        <li>
+                            起送价:￥<span>10</span>
+                        </li>
+                        <li>
+                            配送价:￥<span>3</span>
+                        </li>
+                    </ul>
+                    <div class="cancelButton">
+                        取消收藏
+                    </div>
+                </div>
+            </div>
+            <div class="aCollection">
+                <a href="">
+                    <img class="collectShopImg" src=""/>
+                </a>
+                <div class="collectShopImg_right">
+                    <a href="" class="collectShopName">这是个店铺名3</a>
+                    <ul class="priceInf">
+                        <li>
+                            起送价:￥<span>10</span>
+                        </li>
+                        <li>
+                            配送价:￥<span>3</span>
+                        </li>
+                    </ul>
+                    <div class="cancelButton">
+                        取消收藏
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--内容部分3-End-->
+    </div>
+</div>
+</body>
+</html>

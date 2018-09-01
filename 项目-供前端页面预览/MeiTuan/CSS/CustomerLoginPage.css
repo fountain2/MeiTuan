@@ -1,0 +1,60 @@
+.top{
+    width: 350px;
+    height: 50px;
+    margin: 0px auto;
+}
+.bg_top{
+    width: 145px;
+    height: 60px;
+    margin-left: -300px;
+    background: url("../res/img/SellerRegisterPage/pic_top.png") no-repeat -115px -748px;
+}
+.content{
+    height: 383px;
+    width: 1349px;
+    margin: 0px auto;
+}
+.content_left{
+    margin-left: 100px;
+}
+.content_right{
+    width: 300px;
+    height: 370px;
+    /*border: 1px solid red;*/
+    margin-left: 750px;
+    margin-top: -330px;
+}
+p{
+    font-size: 10px;
+    margin-top: 20px;
+}
+input[type = text]{
+    width: 270px;
+    height: 40px;
+    text-indent: 1em;
+}
+
+input[type = password]{
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    text-indent: 1em;
+}
+input[type = checkbox]{
+    margin-top: 15px;
+}
+input[type = button]{
+    width: 270px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+a{
+    color: #FA9F13;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

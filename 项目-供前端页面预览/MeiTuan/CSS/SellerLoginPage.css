@@ -1,0 +1,197 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+/**
+外边框设置，用于限制页面大小
+*/
+.container{
+    width:1349px;
+    /*border:1px solid black;*/
+}
+
+
+/*
+顶部导航栏部分Start————
+*/
+/*背景框*/
+.top_bg{
+    width: 100%;
+    height: 62px;
+    background-color: #06C1AE;
+}
+.top_logo{
+    margin: 5px 0 0 20px;
+    width: auto;
+    height: 52px;
+}
+/*导航栏选项*/
+.top_bg ul{
+    float: right;
+}
+.top_bg ul li{
+    float: left;
+    width: 110px;
+    height: 62px;
+    line-height: 62px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.top_bg a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.top_bg a:hover{
+    text-shadow: 0 0 10px rgba(255,255,255,1);
+}
+/*账号块*/
+.top_bg ul li:last-child{
+    margin:0 10px;
+    width: 110px;
+    /*height: 62px;*/
+    transition: 0.3s;
+}
+.top_bg ul li:last-child:hover{
+    background-color: #17D2BF;
+}
+.userIcon{
+    float: left;
+    margin-left: 4px;
+    font-size: 14px;
+}
+.userName{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.userOperate{
+    position: relative;
+    width: 110px;
+    height: 35px;
+    background-color: rgba(0,0,0,.5);
+    font-size: 16px;
+    line-height: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+/**
+内容区头部
+*/
+.content_top{
+    width:320px;
+    padding-top:20px;
+    border-bottom: 1px solid #ececec;
+    margin:20px 510px 0;
+}
+
+.content_top h4{
+    color:#06C1AE;
+    padding:20px 0;
+    text-align: center;
+}
+
+/**
+内容区主体部分
+*/
+.content_main{
+    margin:0 530px;
+    width:280px;
+}
+
+
+input{
+    padding:10px 28px;
+    width:220px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+input:focus{
+    border:1px  solid #06C1AE;
+    outline:none;
+}
+
+
+.icon_box{
+    position: relative;
+}
+
+.icon_label{
+    position: absolute;
+    left:8px;
+    top:18px;
+}
+
+.iconfont {
+    padding-top: 10px;
+    font-size: 4px;
+    color: #ccc;
+    position: relative;
+
+}
+
+#login{
+    background:#06C1AE;
+    width:280px;
+    padding:10px 0;
+    color:white;
+    border:none;
+    border-radius: 2px ;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#login:hover{
+    background: #20bba9;
+}
+
+.hint_box{
+    margin-top: 10px;
+}
+.hint{
+    text-decoration: none;
+    color:#06C1AE;
+    font-size: 12px;
+}
+.hint:hover{
+    text-decoration: underline;
+}
+
+.error{
+    position: relative;
+    height:16px;
+    padding:10px 56px 10px 0px;
+    width:220px;
+    margin-top: 10px;
+    border: 1px solid #FFD9CA;
+    background-color: #fff6ec;
+}
+.error img{
+    position: absolute;
+    margin-left: 0;
+    top:12px;
+    left:10px;
+    width:12px;
+}
+.error p{
+    position: absolute;
+    font-size: 12px;
+    left: 28px;
+    color:#666;
+}

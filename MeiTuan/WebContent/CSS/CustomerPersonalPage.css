@@ -1,0 +1,615 @@
+/*
+——整体设置Start——
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F5F5F5;
+}
+ul {
+    list-style: none;
+}
+.all {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1000px) {
+    .all {
+        width: 1000px;
+    }
+}
+/*左浮动*/
+.left{
+    float: left;
+}
+/*消除浮动*/
+.clear {
+    clear: both;
+}
+/*——整体设置End——*/
+
+
+/*
+——顶部导航栏Start——
+*/
+.top_content_width{
+    width: 1000px;
+    margin: 0 auto;
+}
+/*顶部黑条*/
+.top_part1_bg{
+    width: 100%;
+    height: 32px;
+    background-color: #333333;
+}
+.address{
+    width: auto;
+    height: 12px;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding-right: 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #645B4E;
+}
+.changeAddr{
+    width: auto;
+    height: 12px;
+    float: left;
+    margin: 10px 0 0 0;
+    line-height: 10px;
+    color: #FFD161;
+    font-size: 12px;
+    text-decoration: none;
+}
+.loginButton{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+}
+.loginButton:hover{
+    color: white;
+}
+.registerButton{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #D2D0BC;
+}
+.registerButton:hover{
+    color: white;
+}
+.changeCustomer{
+    width: auto;
+    height: 12px;
+    float: right;
+    margin: 10px 0 0 0;
+    line-height: 10px;
+    color: #FFD161;
+    font-size: 12px;
+    text-decoration: none;
+}
+.customerName{
+    width: auto;
+    height: 12px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 10px 0 0;
+    padding: 0 10px;
+    line-height: 10px;
+    color: #D2D0BC;
+    font-size: 12px;
+    border-right: 2px solid #645B4E;
+}
+/*导航栏*/
+.top_part2_bg{
+    width: 100%;
+    height: 82px;
+    background-color: white;
+}
+.logoImg{
+    width: 163px;
+    height: 48px;
+    margin: 17px 0;
+    float: left;
+    background-image: url("../img/logo.png");
+    background-size: 100% 100%;
+}
+.search_bg{
+    width: 300px;
+    height: 40px;
+    margin-top: 21px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    float: right;
+    border: 1px solid #E5E5E5;
+}
+.searchBar{
+    width: 250px;
+    height: 38px;
+    float: left;
+    border: none;
+    text-indent: 1em;
+    outline: none;
+}
+.searchButton{
+    width: 48px;
+    height: 38px;
+    box-sizing: border-box;
+    border-left: 1px solid #E5E5E5;
+    float: right;
+    text-align: center;
+    line-height: 38px;
+}
+.item{
+    height: 40px;
+    float: right;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.item li{
+    height: 40px;
+    padding: 0 20px;
+    float: left;
+    line-height: 40px;
+    font-size: 16px;
+}
+.item li a{
+    color: black;
+    text-decoration: none;
+}
+.item li a:hover{
+    color: #FFA735;
+}
+/*——顶部导航栏End——*/
+
+/*悬浮置顶按钮*/
+.toTop{
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 48px;
+    font-size: 30px;
+    transition: 0.2s;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+.toTop:hover{
+    color: #333333;
+    background-color: #FFD161;
+}
+/*
+——内容区——
+*/
+.content_bg{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+/*内容区-左侧*/
+.content_left{
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.option{
+    margin-top: 10px;
+}
+.option li div{
+    width: 180px;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    cursor: pointer;
+}
+.option li:first-child div{
+    border-left: 5px solid #FFD161;
+    background-color: #FAFAFA;
+}
+.option li div:hover{
+    border-left: 5px solid #FFD161;
+    background-color: #FAFAFA;
+}
+/*
+——内容区-右侧-页面1-Start——
+*/
+.content1_right{
+    width: 810px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    /*display: none;/!*用于切换查看页面————*!/*/
+}
+/*内容区-右侧-页面1-标题*/
+.title{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+    line-height: 50px;
+    color: #666666;
+}
+.title_1{
+    margin-left: 70px;
+}
+.title_2{
+    margin-left: 390px;
+}
+.title_3{
+    margin-left: 100px;
+}
+/*内容区-右侧-页面1-单个订单记录*/
+/*订单头部*/
+.aOrderTop{
+    width: 100%;
+    height: 130px;
+    box-sizing: border-box;
+    padding: 30px;
+    cursor: default;
+}
+.aOrderTop:hover{
+    background-color: #FAFAFA;
+}
+.shopImg{
+    width: 100px;
+    height: 70px;
+    background-color: #06C1AE;
+    margin-right: 24px;
+    margin-left: 20px;
+    float: left
+}
+/*——————*/
+.shopInf1{
+    width: 340px;
+    float: left;
+    font-size: 12px;
+    color: #999999;
+}
+.shopName{
+    width: 300px;
+    margin: 10px 0;
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.shopName:hover{
+    color: #FFA735;
+}
+.orderTime{
+    float: left;
+    margin-right: 10px;
+}
+.orderID{
+    float: left;
+}
+/*——————*/
+.shopInf2{
+    width: 160px;
+    float: left;
+    line-height: 70px;
+    font-size: 13px;
+}
+/*——————*/
+.shopInf3{
+    width: 100px;
+    float: left;
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*右侧页面1-订单内容区*/
+.aOrderContent{
+    width: 750px;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+}
+/*右侧页面1-订单内容-左侧*/
+.aOrderBox_left{
+    width: 500px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-right: 1px solid #dddddd;
+    float: left;
+}
+.goodsListTitle{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #9B9B9B;
+    font-weight: bold;
+}
+.goodsListBox{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.goodsListBox li{
+    height: 30px;
+}
+.goodsName{
+    width: 320px;
+    height: auto;
+    display: inline-block;
+}
+.goodsNum{
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+.goodsPrice{
+    width: 78px;
+    height: auto;
+    display: inline-block;
+    text-align: right;
+}
+.numOfPay{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    text-align: right;
+    border-bottom: 1px solid #dddddd;
+}
+.numOfPay span{
+    color: red;
+    font-size: 20px;
+}
+.customerInf{
+    width: 100%;
+    height: 110px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.customerInf li{
+    height: 25px;
+    line-height: 25px;
+    color: #555555;
+}
+.customerInf_left{
+    width: 50px;
+    display: inline-block;
+}
+.customerInf_right{
+    width: 200px;
+    display: inline-block;
+}
+/*右侧页面1-订单内容-右侧*/
+.aOrderBox_right{
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+    border-left: 1px solid #dddddd;
+    position: relative;
+    left: -1px;
+}
+.orderState{
+    width: 240px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.orderStateTitle{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #9B9B9B;
+    font-weight: bold;
+}
+.orderStateList{
+    box-sizing: border-box;
+}
+.orderStateList li {
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    color: #FA9700;
+    font-weight: bold;
+}
+.orderStateList span{
+    width: 10px;
+    height: 10px;
+    margin: 19px 18px;
+    border-radius: 50%;
+    float: left;
+    background-color: #FA9700;
+}
+.lastUpdateTime{
+    margin: 4px 0;
+    padding-left: 6px;
+    font-size: 12px;
+    color: #A7A7A7;
+}
+.buttonColumn{
+    width: 250px;
+    height: 40px;
+}
+.buttonColumn div{
+    width: 94px;
+    height: 40px;
+    float: left;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #FFCD56;
+    cursor: pointer;
+}
+/*——内容区-右侧-页面1-End——*/
+/*
+——内容区-右侧-页面2-Start——
+*/
+.content2_right{
+    width: 810px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    margin: 10px 0;
+    padding: 20px;
+    display: none;/*用于切换查看页面————*/
+}
+.content2_title{
+    color: #aaaaaa;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.userInf1{
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.userInf1 li{
+    width: 130px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.userInf2{
+    float: left;
+    margin-top: 20px;
+}
+.userInf2 li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.userInf2 li input{
+    height: 24px;
+    text-indent: 0.5em;
+}
+.userInf2 li span{
+    font-size: 14px;
+}
+.changeButtonLocation{
+    margin-top: 20px;
+    margin-left: 330px;
+}
+.changeButton{
+    width: 100px;
+    height: 36px;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+    transition: 0.3s;
+    border: none;
+}
+.changeButton:hover{
+    background-color: #FFD161;
+}
+/*——内容区-右侧-页面2-End——*/
+/*
+——内容区-右侧-页面3-Start——
+*/
+.content3_right{
+    width: 810px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    margin: 10px 0;
+    padding: 10px 35px;
+    display: none;/*用于切换查看页面————*/
+}
+.aCollection{
+    width: 370px;
+    height: 120px;
+    margin: 5px 0;
+    border-bottom: 1px solid #dddddd;
+    float: left;
+}
+.collectShopImg{
+    width: 110px;
+    height: 80px;
+    background-color: #06C1AE;
+    margin: 18px;
+    float: left
+}
+.collectShopName{
+    width: 200px;
+    margin-top: 20px;
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.collectShopName:hover{
+    color: #FFD161;
+}
+.priceInf{
+    width: 200px;
+    float: left;
+}
+.priceInf li{
+    width: 100px;
+    height: 40px;
+    line-height: 44px;
+    float: left;
+    font-size: 14px;
+    color: #999999;
+}
+.cancelButton{
+    float: right;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #888888;
+    cursor: pointer;
+}
+.cancelButton:hover{
+    color: #ee9999;
+}
+/*——内容区-右侧-页面3-End——*/
